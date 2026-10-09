@@ -34,7 +34,7 @@ export default function SignUpPage() {
     }
     
     toast.success("অ্যাকাউন্ট তৈরি হয়েছে, এবার সাইন ইন করুন");
-    router.push("/signin");
+    router.push("/sign-in");
   }
 
   async function social(provider: "google" | "github") {
@@ -119,7 +119,7 @@ export default function SignUpPage() {
 
         <p className="text-sm text-center text-gray-600 mt-6">
           আগে থেকেই অ্যাকাউন্ট আছে?{" "}
-          <Link href="/signin" className="text-green-700 font-semibold">
+          <Link href="/sign-in" className="text-green-700 font-semibold">
             সাইন ইন
           </Link>
         </p>
