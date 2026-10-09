@@ -1,0 +1,21 @@
+export type Product = {
+  id: string | number;
+  slug?: string;
+  name?: string;
+  title?: string;
+  category?: string | { name?: string; slug?: string };
+  categorySlug?: string;
+  unit?: string;
+  price?: number | string;
+  currentPrice?: number | string;
+  minPrice?: number | string;
+  maxPrice?: number | string;
+  averagePrice?: number | string;
+  change?: number | string;
+  changePercent?: number | string;
+  emoji?: string;
+  description?: string;
+  markets?: Array<{ name?: string; bazar?: string; price?: number | string; unit?: string }>;
+  [key: string]: unknown;
+};
+export type Category = { id?: string | number; name?: string; title?: string; slug?: string; icon?: string; emoji?: string; [key: string]: unknown };
